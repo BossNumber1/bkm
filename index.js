@@ -6,7 +6,7 @@ const onCallback_queryBot = require("./puzzleElements/botOnCallback_query/botOnC
 const TelegramApi = require("node-telegram-bot-api");
 require("dotenv").config();
 // const token = process.env.token;
-const token = "1812820498:AAGnZvKV0eKPdezTr5vBgqRYkp4eA53quPw";
+const token = "5073567391:AAEuSakjPEUDnuvggDLOOQITvlNTGSJ3hnU";
 const bot = new TelegramApi(token, { polling: true });
 const chats = {};
 let counter = 0;
@@ -24,10 +24,11 @@ const startGame = async (chatId) => {
 };
 
 const start = () => {
-    bot.setMyCommands([
+    /*bot.setMyCommands([
         { command: "/info", description: "Получить информацию" },
         { command: "/game", description: "Игра про угадывание цифры" },
-    ]);
+        { command: "/top", description: "Топ 3 книги" },
+    ]);*/
 
     async function receivingSticker(chatId, pathToSticker) {
         return bot.sendSticker(chatId, pathToSticker);
