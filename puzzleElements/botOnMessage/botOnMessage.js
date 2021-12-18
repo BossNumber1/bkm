@@ -18,6 +18,12 @@ module.exports = (bot, receivingSticker, startGame) => {
                 callback_data: 'game'
             }
         ],
+        [
+            {
+                text: 'FaQ',
+                callback_data: 'FaQ'
+            }
+        ],
     ]
 
     
