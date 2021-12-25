@@ -24,11 +24,9 @@ const startGame = async (chatId) => {
 };
 
 const start = () => {
-    /*bot.setMyCommands([
-        { command: "/info", description: "Получить информацию" },
-        { command: "/game", description: "Игра про угадывание цифры" },
-        { command: "/top", description: "Топ 3 книги" },
-    ]);*/
+    bot.setMyCommands([
+        { command: "/start", description: "Обновление бота и запуск" },
+    ]);
 
     async function receivingSticker(chatId, pathToSticker) {
         return bot.sendSticker(chatId, pathToSticker);
